@@ -5,6 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+            .pink{
+                background-color: pink;
+            }
+        </style>
     </head>
 
     <body>
@@ -12,6 +17,15 @@
         <button>button2</button>
         <button>button3</button>
         <button>button4</button>
+        <script>
+            let bts = document.querySelectorAll('button')
+            for (let i = 0; i < bts.length;i++){
+                bts[i].addEventListener('click', function(){
+                    document.querySelector('.pink').className = ''
+                    this.className = 'pink'
+                })
+            }
+        </script>
     </body>
 
 </html>
