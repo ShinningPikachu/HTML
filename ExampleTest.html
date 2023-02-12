@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h2 {
+                text-align: center;
+            }
+            table {
+                border-collapse: collapse;
+                height: 80px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            th{
+                padding:5px 20px;
+            }
+            table, th, td{
+                border: 1px solid #000;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>order</h2>
+
+        <script>
+            let price = +prompt('price')
+            let num = +prompt('number')
+            let addrece = prompt('addrece')
+            
+            let total = price * num
+
+            document.write(`
+            <table>
+                <tr>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>number</th>
+                    <th>total price</th>
+                    <th>addrece</th>
+                </tr>
+                <tr>
+                    <td>xiaomi</td>
+                    <td>${price}</td>
+                    <td>${num}</td>
+                    <td>${total}</td>
+                    <td>${addrece}</td>
+                </tr>
+            </table>
+            `)
+
+        </script>
+    </body>
+
+</html>
